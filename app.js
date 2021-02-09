@@ -58,10 +58,8 @@ function removeTask(e) {
 }
 
 // Clear All Tasks
-function clearTasks(e) {
-    if(e.target.classList.contains("clear-tasks")) {
-        if(confirm("Are you sure you want to remove all tasks?")) {
-            tasksList.remove();
-        }
+function clearTasks() {
+    while(tasksList.firstChild) {
+        tasksList.removeChild(tasksList.firstChild);
     }
 }
