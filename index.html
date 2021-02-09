@@ -22,9 +22,29 @@
     <div class="container">
       <div class="row">
         <div class="col s12">
-            <div id="main" class="card">
+            <div id="main" class="card yellow darken-0.5">
+                <!-- Add new task -->
                 <div class="card-content">
-                    <soan class="card-title">Tasks List</soan>
+                    <span class="card-title">Tasks List</span>
+                    <div class="row">
+                        <form id="task-form">
+                            <div class="input-field col s12">
+                                <input type="text" name="task" id="task">
+                                <label for="task">Task Name</label>
+                            </div>
+                            <input type="submit" value="Add Task" class="btn blue">
+                        </form>
+                    </div>
+                </div>
+                <!-- List of tasks -->
+                <div class="card-action">
+                    <h5 class="task-title">To do</h5>
+                    <div class="input-field col s12">
+                        <input type="text" name="filter" id="filter">
+                        <label for="fiter">Filter Tasks</label>
+                    </div>
+                    <ul class="collection"></ul>
+                    <a href="#" class="clear-tasks btn red">Clear Tasks</a>
                 </div>
             </div>
         </div>
